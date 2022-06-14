@@ -24,7 +24,7 @@ const connect = async () => {
 mongoose.connection.on("disconnected", () => {
   console.log("mongoDB disconnected");
 });
-
+const BASE_URI = "/api/v1";
 //middlewares
 app.use(cookieParser());
 app.use(express.json());
